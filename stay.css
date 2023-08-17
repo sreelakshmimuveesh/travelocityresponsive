@@ -1,0 +1,227 @@
+body{
+  font-family: poppins-semibold;
+}
+select {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    border: gray solid;
+    border-radius: 10px;
+  }
+  .stayflex{
+    display: flex;
+    background-color:white;
+    padding: auto;
+    margin: auto;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+  }
+  .stayflex>div{
+    background-color:white;
+    width: auto;
+    height: auto;
+    color: white;margin: 10px;
+    margin: auto;
+  }
+  .stayflex2{
+    display: flex;
+    background-color:white;
+    padding: auto;
+    margin: auto;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+  }
+  .stayflex2>div{
+    background-color:white;
+    width: auto;
+    height: auto;
+    color: white;
+    margin: auto;
+  }
+  .text4{
+    background-image: url('images/person_FILL0_wght400_GRAD0_opsz48.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 20px 12px 40px;
+    background-size: 20px 20px;
+  }
+  .searchstay {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+    height: auto;
+    border: 1px solid gray;
+    bac
+
+  }
+  
+  .searchstay span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .searchstay span:after {
+    content: '\00bb';
+  
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .searchstay:hover span {
+    padding-right: 25px;
+  }
+  .searchstay:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .selectoption{
+    width: auto;
+  }
+  .labelstay{
+    margin-left: 20px;
+   
+  }
+  #text,#text1{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    display: none;
+  }
+  #textone{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/location_on_FILL0_wght400_GRAD0_opsz48.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 20px 12px 40px;
+    background-size: 20px 20px;
+  
+  }
+  #text2{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/calendar_month_FILL0_wght400_GRAD0_opsz48.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 20px 12px 40px;
+    background-size: 20px 20px;
+  }
+  #text3{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/person_FILL0_wght400_GRAD0_opsz48.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 20px 12px 40px;
+    background-size: 20px 20px;
+  }
+  #up-arrow,#down-arrow{
+    width: 100px;
+    height: 100px;
+  }
+  #total-count{
+    font-weight: 100;
+    font-size: 30px;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: auto;
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+    color: black;
+    
+  }
+  .container>div{
+    width: auto;
+    height: auto;
+    margin: 10px;
+   
+  }
+
+
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+    color: black;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    background-color: DodgerBlue;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: black; 
+  }
+  @media (max-width: 800px) {
+    .stayflex {
+      flex-direction: column;
+    }
+    .stayflex2{
+      flex-direction: column;
+    }
+  }
